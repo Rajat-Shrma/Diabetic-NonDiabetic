@@ -1,6 +1,6 @@
 pickle
 pandas
-sklearn
+scikit-learn
 streamlit
 numpy 
 time
