@@ -22,7 +22,7 @@ Insulin= st.text_input("Insulin")
 BMI= st.text_input("BMI")
 DiabetesPF= st.text_input("DiabetesPedigreeFunction")
 Age= st.text_input("Age")
-data=[Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPF,Age]
+data=[int(Pregnancies),int(Glucose),int(BloodPressure),float(SkinThickness),float(Insulin),float(BMI),float(DiabetesPF),int(Age)]
 input_narray=np.asarray(data)
 input_data=input_narray.reshape(1,-1)
 if st.button("Report"):
