@@ -4,7 +4,7 @@ import sklearn
 import streamlit as st
 import numpy as np
 import time as t
-load_model=pickle.load(open('C:/Users/hp/Downloads/diabeticPrediction.sav','rb'))
+load_model=pickle.load(open('diabeticPrediction.sav','rb'))
 def check(input_data):
     if load_model.predict(input_data)==1:
         return "Negative"
@@ -37,6 +37,3 @@ def main():
             st.success("You Non diabetic Person")
         else:
             st.warning("You are a diabetic Person.Get yourself checked!")
-
-if __name__=="__main__":
-    main()
